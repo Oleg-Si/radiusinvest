@@ -1,0 +1,31 @@
+@mixin reset-ul() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@mixin container() {
+  min-width: 320px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+  @media ($mobile-width) {
+    width: 576px;
+  }
+  @media ($tablet-width) {
+    width: 768px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  @media ($desktop-width) {
+    width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
