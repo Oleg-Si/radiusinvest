@@ -12,9 +12,18 @@
 
 /* ------------------------------------------------ */
 
-@import "global/fonts.scss";
+@import "global/animate.scss";
 
 /* ------------------------------------------------ */
 
-@import "block/0.scss";
+@import "block/promo.scss";
+@import "block/header.scss";
+@import "block/logo.scss";
+@import "block/contacts.scss";
+@import "block/btn.scss";
+@import "block/footer.scss";
+@import "block/howitworks.scss";
+@import "block/page-title.scss";
+@import "block/install.scss";
+@import "block/partner.scss";
 

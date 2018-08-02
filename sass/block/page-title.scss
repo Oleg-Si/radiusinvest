@@ -1,0 +1,64 @@
+.page-title {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  &__mini {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+  &__big {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 3px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 3px;
+    background-color: $main;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -65px;
+  }
+}
+@media ($mobile-width) {
+
+}
+@media ($tablet-width) {
+  .page-title {
+    &__mini {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &__big {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}
+@media ($desktop-width) {
+  .page-title {
+    &__mini {
+      font-size: 16px;
+      line-height: 19px;
+      &--mega {
+        font-size: 18px;
+        font-weight: 800;
+      }
+    }
+    &__big {
+      font-size: 24px;
+      line-height: 29px;
+      &--mega {
+        font-size: 26px;
+        line-height: 31px;
+        font-weight: 800;
+      }
+    }
+  }
+}

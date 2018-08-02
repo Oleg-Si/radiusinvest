@@ -1,0 +1,72 @@
+.contacts {
+  text-align: center;
+  margin-top: 20px;
+  color: $textsecond;
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    a {
+      text-decoration: none;
+      color: $textsecond;
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: 700;
+      &:hover {
+        color: $main;
+      }
+    }
+  }
+  &__messenger {
+    display: flex;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 2px;
+    justify-content: center;
+    text-align: center;
+    i {
+      font-size: 12px;
+    }
+  }
+  &__messenger-item {
+    margin: 0;
+    margin-right: 8px;
+    &:nth-of-type(1) {
+      i {
+        color: $main;
+      }
+    }
+    &:nth-of-type(2) {
+      i {
+        color: #93278F;
+      }
+    }
+    &:nth-of-type(3) {
+      margin-right: 0;
+      i {
+        color: #39B54A;
+      }
+    }
+  }
+  &__worktime {
+    margin: 0;
+    margin-top: 3px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+@media ($mobile-width) {
+  .contacts {
+    margin-top: 0;
+    margin-left: auto;
+    text-align: right;
+    &__messenger {
+      justify-content: flex-end;
+    }
+  }
+}
+@media ($tablet-width) {
+
+}
+@media ($desktop-width) {
+
+}

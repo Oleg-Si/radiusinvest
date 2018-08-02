@@ -1,0 +1,38 @@
+.btn {
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $btn;
+  border: 0;
+  padding: 15px 20px;
+  border-radius: 90px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  color: $textsecond;
+  &:hover {
+    background-color: #B31831;
+  }
+}
+@media ($mobile-width) {
+
+}
+@media ($tablet-width) {
+
+}
+@media ($desktop-width) {
+  .btn {
+    font-size: 18px;
+    min-height: 75px;
+    width: 313px;
+    margin-top: 70px;
+    &--small {
+      width: 220px;
+      min-height: 56px;
+      font-size: 16px;
+      margin-left: 0;
+      margin-top: 40px;
+    }
+  }
+}

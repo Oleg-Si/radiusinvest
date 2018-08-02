@@ -1,0 +1,40 @@
+.header {
+  &__nav {
+    display: none;
+  }
+}
+@media ($mobile-width) {
+  .header {
+    display: flex;
+  }
+}
+@media ($tablet-width) {
+
+}
+@media ($desktop-width) {
+  .header {
+    margin-bottom: 60px;
+    &__nav {
+      display: flex;
+      @include reset-ul;
+      margin-left: auto;
+    }
+    &__nav-item {
+      margin-right: 20px;
+      a {
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration: none;
+        padding-bottom: 1px;
+        color: $textsecond;
+        border-bottom: 1px dashed $main;
+        &:hover {
+          color: $main;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

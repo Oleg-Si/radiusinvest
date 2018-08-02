@@ -1,0 +1,62 @@
+.install {
+  background-color: #333;
+  background-image: url('../img/install.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  color: $textsecond;
+  &__wrapper {
+    @include container;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  &__item {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 120px;
+    margin-bottom: 30px;
+  }
+  &__name {
+    text-align: center;
+  }
+  &__img {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &__sub {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 900;
+    text-align: center;
+  }
+}
+@media ($mobile-width) {
+
+}
+@media ($tablet-width) {
+  .install {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}
+@media ($desktop-width) {
+  .install {
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 80px;
+    }
+    &__item {
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 170px;
+      margin-bottom: 30px;
+    }
+  }
+}

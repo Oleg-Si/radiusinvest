@@ -1,0 +1,39 @@
+.partner {
+  &__wrapper {
+    @include container;
+  }
+  &__img {
+    margin-bottom: 30px;
+  }
+}
+@media ($mobile-width) {
+
+}
+@media ($tablet-width) {
+  .partner {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}
+@media ($desktop-width) {
+  .partner {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    &__wrapper {
+      display: flex;
+    }
+    &__img {
+      width: 420px;
+      margin-bottom: 0;
+      img {
+        display: block;
+      }
+    }
+    &__info {
+      width: 700px;
+      margin-left: auto;
+      padding-top: 80px;
+      padding-left: 20px;
+    }
+  }
+}

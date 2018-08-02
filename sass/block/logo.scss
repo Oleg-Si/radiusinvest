@@ -1,0 +1,42 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: $textsecond;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__descr {
+    border-left: 1px solid $main;
+    padding-left: 15px;
+  }
+  &__title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  &__description {
+    margin: 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &__img {
+    margin-right: 15px;
+    img {
+      display: block;
+    }
+  }
+}
+@media ($mobile-width) {
+  .logo {
+    justify-content: flex-start;
+    max-height: 50px;
+  }
+}
+@media ($tablet-width) {
+
+}
+@media ($desktop-width) {
+
+}

@@ -1,0 +1,19 @@
+@keyframes pulse {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1.01);
+  }
+}
+
+@keyframes pulse-big {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1.01);
+  }
+}

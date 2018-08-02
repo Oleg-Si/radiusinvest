@@ -1,0 +1,43 @@
+.promo {
+  background-color: #333;
+  background-image: url('../img/promo_bg.jpg');
+  background-position: bottom;
+  background-attachment: fixed;
+  color: $textsecond;
+  &__wrapper {
+    @include container;
+  }
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    &--warn {
+      color: #FFFF00;
+    }
+  }
+}
+@media ($mobile-width) {
+
+}
+@media ($tablet-width) {
+  .promo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media ($desktop-width) {
+  .promo {
+    padding-top: 25px;
+    min-height: 625px;
+    &__title {
+      font-size: 33px;
+      line-height: 33px;
+      &--italic {
+        font-style: italic;
+        font-weight: 800;
+      }
+      &--warn {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
