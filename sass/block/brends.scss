@@ -1,0 +1,35 @@
+.brends {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #F5F5F5;
+  &__wrapper {
+    @include container;
+  }
+  &__item {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+@media ($mobile-width) {
+
+}
+@media ($tablet-width) {
+  .brends {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+@media ($desktop-width) {
+  .brends {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    &__items {
+      display: flex;
+      justify-content: space-between;
+      opacity: 0.8;
+      margin-top: 80px;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.call {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ccc;
+  background-image: url('../img/call_bg.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  &__wrapper {
+    @include container;
+  }
+  &__img {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &__name {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: $main;
+  }
+  &__descr {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $textsecond;
+    margin-top: 0;
+  }
+  &__mail {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $textsecond;
+    text-decoration: none;
+    display: block;
+    &:hover {
+      color: $main;
+    }
+  }
+  .btn {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  .contacts {
+    text-align: center;
+  }
+  .contacts__messenger {
+    justify-content: center;
+  }
+}
+@media ($mobile-width) {
+
+}
+@media ($tablet-width) {
+  .call {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+@media ($desktop-width) {
+  .call {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    &__img {
+      margin-bottom: 30px;
+      img {
+        max-width: 50px;
+      }
+    }
+    &__items {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__name {
+      position: relative;
+    }
+    &__descr {
+      max-width: 275px;
+    }
+  }
+}

@@ -25,6 +25,12 @@
     bottom: -10px;
     margin-left: -65px;
   }
+  &--white {
+    .page-title__mini,
+    .page-title__big {
+      color: $textsecond;
+    }
+  }
 }
 @media ($mobile-width) {
 

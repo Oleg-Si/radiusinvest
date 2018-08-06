@@ -1,0 +1,135 @@
+.step {
+  background-color: #f5f5f5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &__wrapper {
+    @include container;
+    position: relative;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    max-width: 425px;
+    margin-bottom: 30px;
+  }
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  &__list {
+    @include reset-ul;
+    li {
+      font-size: 14px;
+      line-height: 17px;
+      i {
+        color: $main;
+        margin-right: 3px;
+      }
+    }
+  }
+  &__img {
+    display: none;
+  }
+}
+@media ($mobile-width) {
+  .step {
+    &__items {
+      align-items: center;
+    }
+    &__item {
+      width: 425px;
+    }
+  }
+}
+@media ($tablet-width) {
+  .step {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+@media ($desktop-width) {
+  .step {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    min-height: 1000px;
+    &__items {
+      align-items: flex-start;
+      margin-top: 80px;
+      padding-top: 10px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    &__item {
+      margin-bottom: 105px;
+      &:nth-of-type(2n) {
+        margin-left: auto;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__img {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 140px;
+      left: 50%;
+      margin-left: -50px;
+    }
+    &__sep {
+      width: 2px;
+      height: 50px;
+      background: linear-gradient(to bottom,rgba(0,196,249,0.5) ,#00C4F9 100%);
+      margin-left: 48px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    &__step {
+      line-height: 48px;
+      font-size: 40px;
+      font-weight: 900;
+      text-align: center;
+      padding-top: 25px;
+      color: $textsecond;
+      width: 100px;
+      height: 100px;
+      background-color: $main;
+      border-radius: 50%;
+      display: block;
+      position: relative;
+      z-index: 4;
+      &::before {
+        content: '';
+        width: 116px;
+        height: 116px;
+        background-color: $main;
+        position: absolute;
+        left: 50%;
+        margin-left: -58px;
+        top: 50%;
+        margin-top: -58px;
+        border-radius: 50%;
+        opacity: 0.4;
+        z-index: -1;
+      }
+      &::after {
+        content: '';
+        width: 130px;
+        height: 130px;
+        background-color: $main;
+        position: absolute;
+        left: 50%;
+        margin-left: -65px;
+        top: 50%;
+        margin-top: -65px;
+        border-radius: 50%;
+        opacity: 0.4;
+        z-index: -2;
+      }
+    }
+  }
+}

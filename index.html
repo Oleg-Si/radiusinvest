@@ -7,7 +7,7 @@
     <meta name="description" content="Одним из наших разработанных продуктов является система смс-авторизации публичных wi-fi сетей. Продукт быстро стал востребованным в барах, ресторанах, кафе, автомойках, салонах красоты и т.д. так как данная система авторизации по законодательству Республики Беларусь должна быть установлена на каждой публичной wi-fi сети.">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link href="css/style.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <title>Бесплатная СМС авторизация в публичных WI-FI сетях</title>
   </head>
@@ -25,9 +25,9 @@
             </div>
           </div>
           <ul class="header__nav">
-            <li class="header__nav-item"><a href="">Авторизация публичных Wi-Fi сетей</a></li>
-            <li class="header__nav-item"><a href="">Кому необходима</a></li>
-            <li class="header__nav-item"><a href="">Кто может стать нашим партнером</a></li>
+            <li class="header__nav-item"><a class="howitworksButton" href="#howitworks">Авторизация публичных Wi-Fi сетей</a></li>
+            <li class="header__nav-item"><a class="installButton" href="#install">Кому необходима</a></li>
+            <li class="header__nav-item"><a class="partnerButton" href="#partner">Кто может стать нашим партнером</a></li>
           </ul>
           <div class="contacts">
             <div class="contacts__phone">
@@ -45,11 +45,11 @@
         <h2 class="promo__title">ПРЕДЛАГАЕМ СОТРУДНИЧЕСТВО С IT-КОМПАНИЕЙ <br>В МИНСКЕ</h2>
         <h2 class="promo__title  promo__title--warn">НЕ ПРОДАЖИ</h2>
         <h2 class="promo__title  promo__title--italic">ИЗУЧИ НАШЕ ПРЕДЛОЖЕНИЕ И ЕСЛИ ТЕБЕ  ИНТЕРЕСНО - ЖДЁМ ТЕБЯ У НАС В ОФИСЕ!</h2>
-        <button class="btn">УЗНАТЬ ПОДРОБНЕЕ</button>
+        <button class="btn  openPopup">УЗНАТЬ ПОДРОБНЕЕ</button>
       </div>
     </section>
 
-    <section class="howitworks">
+    <section class="howitworks" id="howitworks">
       <div class="howitworks__wrapper">
         <div class="page-title">
           <p class="page-title__mini">КАК РАБОТАЕТ НАША БЕСПЛАТНАЯ СИСТЕМА</p>
@@ -75,7 +75,7 @@
       </div>
     </section>
 
-    <section class="install">
+    <section class="install" id="install">
       <div class="install__wrapper">
         <div class="page-title">
           <h2 class="page-title__big  page-title__big--mega">КОМУ НЕОБХОДИМА</h2>
@@ -143,17 +143,218 @@
       </div>
     </section>
 
-    <section class="partner">
+    <section class="partner" id="partner">
       <div class="partner__wrapper">
         <div class="partner__img"><img src="img/partner.png" alt="Кто может стать партнером"></div>
         <div class="partner__info">
           <p class="page-title__mini">КТО МОЖЕТ СТАТЬ</p>
           <h2 class="page-title__big">НАШИМ ПАРТНЕРОМ?</h2>
           <p class="partner__descr">Если ты молод, амбициозен, и мечтаешь зарабатывать самостоятельно - у тебя есть шанс стать партнёром IT-компании, и вместе с нами развивать наш успешный продукт для авторизации Wi-Fi сетей во всех заведениях Минска. Всё, что нужно от тебя – это желание работать и зарабатывать, а мы, в свою очередь, поможем и научим тебя независимо от твоих знаний, возраста, графика работы!</p>
-          <button class="btn  btn--small">УЗНАТЬ ПОДРОБНЕЕ</button>
+          <button class="btn  btn--small  openPopup">УЗНАТЬ ПОДРОБНЕЕ</button>
         </div>
       </div>
     </section>
+
+    <section class="step">
+      <div class="step__wrapper">
+        <div class="page-title">
+          <p class="page-title__mini">НАЧНИТЕ ЗАРАБАТЫВАТЬ</p>
+          <h2 class="page-title__big">ЗА 4 ПРОСТЫХ ШАГА</h2>
+        </div>
+        <div class="step__items">
+          <div class="step__item">
+            <h4 class="step__title">ЗНАКОМСТВО</h4>
+            <ul class="step__list">
+              <li><i class="fas fa-caret-right"></i> Приглашаем вас к нам в гости</li>
+              <li><i class="fas fa-caret-right"></i> Общаемся с вами, знакомим вас с нашей системой</li>
+              <li><i class="fas fa-caret-right"></i> Отвечаем вам на интересующие вопросы</li>
+              <li><i class="fas fa-caret-right"></i> Предлагаем вам сотрудничество</li>
+            </ul>
+          </div>
+          <div class="step__item">
+            <h4 class="step__title">НАЧАЛО СОТРУДНИЧЕСТВА</h4>
+            <ul class="step__list">
+              <li><i class="fas fa-caret-right"></i> Вам даётся наша система авторизации</li>
+              <li><i class="fas fa-caret-right"></i> Вы становитесь официальным представителем <br> нашей компании</li>
+              <li><i class="fas fa-caret-right"></i> Мы подписываем с вами официальный контракт</li>
+            </ul>
+          </div>
+          <div class="step__item">
+            <h4 class="step__title">ПОГРУЖЕНИЕ</h4>
+            <ul class="step__list">
+              <li><i class="fas fa-caret-right"></i> Вы проходите полное однодневное обучение</li>
+              <li><i class="fas fa-caret-right"></i> Вам дают готовый скрипт процесса заключения контрактов с заведениями, включая подробные презентации нашей системы для ваших клиентов</li>
+            </ul>
+          </div>
+          <div class="step__item">
+            <h4 class="step__title">НАЧИНАЕТЕ ЗАРАБАТЫВАТЬ</h4>
+            <ul class="step__list">
+              <li><i class="fas fa-caret-right"></i> Вы согласовываете места установок нашей смс-системы</li>
+              <li><i class="fas fa-caret-right"></i> Наши инженеры сами устанавливают систему бесплатно</li>
+              <li><i class="fas fa-caret-right"></i> Мы размещаем рекламные ролики на системе авторизации</li>
+              <li><i class="fas fa-caret-right"></i> Вы получаете фиксированный ежемесячный доход</li>
+            </ul>
+          </div>
+        </div>
+        <div class="step__img">
+          <span class="step__step">1.</span>
+          <span class="step__sep"></span>
+          <span class="step__step">2.</span>
+          <span class="step__sep"></span>
+          <span class="step__step">3.</span>
+          <span class="step__sep"></span>
+          <span class="step__step">4.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="why__wrapper">
+        <div class="page-title">
+          <p class="page-title__mini">ПОЧЕМУ СТОИТ</p>
+          <h2 class="page-title__big">РАБОТАТЬ С НАМИ</h2>
+        </div>
+        <div class="why__items">
+          <div class="why__item">
+            <div class="why__img"><img src="img/w1.png" alt="Причина"></div>
+            <p class="why__name">МАРКЕТИНГОВАЯ ПОДДЕРЖКА</p>
+            <p class="why__descr">Мы сами занимаемся продвижением нашего бренда на территории Республики Беларусь</p>
+          </div>
+          <div class="why__item">
+            <div class="why__img"><img src="img/w2.png" alt="Причина"></div>
+            <p class="why__name">МАСШТАБИРУЕМЫЙ ДОХОД</p>
+            <p class="why__descr">Каждый новый контракт увеличивает доход. Больше заключенных договоров, больше прибыль</p>
+          </div>
+          <div class="why__item">
+            <div class="why__img"><img src="img/w3.png" alt="Причина"></div>
+            <p class="why__name">ONLINE ПОДДЕРЖКА</p>
+            <p class="why__descr">Персональный менеджер в мессенджерах 24/7. Вы всегда можете получить обратную связь</p>
+          </div>
+          <div class="why__item">
+            <div class="why__img"><img src="img/w4.png" alt="Причина"></div>
+            <p class="why__name">ТЕХНИЧЕСКАЯ ПОДДЕРЖКА</p>
+            <p class="why__descr">Постоянное техническое сопровождение  клиентов по всем вопросам. Все техническое обслуживание мы берем на себя</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="result">
+      <div class="result__wrapper">
+        <div class="page-title  page-title--white">
+          <p class="page-title__mini">НЕМНОГО О НАС</p>
+          <h2 class="page-title__big">В ЦИФРАХ ЗА 2017 ГОД</h2>
+        </div>
+        <div class="result__items">
+          <div class="result__item">
+            <p class="result__name">385</p>
+            <p class="result__descr">Подключенных заведений</p>
+          </div>
+          <div class="result__item">
+            <p class="result__name">> 2 млн</p>
+            <p class="result__descr">Человек воспользовались нашим продуктом</p>
+          </div>
+          <div class="result__item">
+            <p class="result__name">1150</p>
+            <p class="result__descr">Долларов в среднем доход партнера в месяц</p>
+          </div>
+          <div class="result__item">
+            <p class="result__name">4</p>
+            <p class="result__descr">Часа в день в среднем работает партнер</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brends">
+      <div class="brends__wrapper">
+        <div class="page-title">
+          <p class="page-title__mini">МЫ СОТРУДНИЧАЕМ С</p>
+          <h2 class="page-title__big">МИРОВЫМИ БРЕНДАМИ</h2>
+        </div>
+        <div class="brends__items">
+          <div class="brends__item">
+            <img src="img/b1.png" alt="Партнер">
+          </div>
+          <div class="brends__item">
+            <img src="img/b2.png" alt="Партнер">
+          </div>
+          <div class="brends__item">
+            <img src="img/b3.png" alt="Партнер">
+          </div>
+          <div class="brends__item">
+            <img src="img/b4.png" alt="Партнер">
+          </div>
+          <div class="brends__item">
+            <img src="img/b5.png" alt="Партнер">
+          </div>
+          <div class="brends__item">
+            <img src="img/b6.png" alt="Партнер">
+          </div>
+          <div class="brends__item">
+            <img src="img/b7.png" alt="Партнер">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="boss">
+      <div class="boss__wrapper">
+        <div class="page-title">
+          <p class="page-title__mini">ПАРУ СЛОВ ОТ</p>
+          <h2 class="page-title__big">ГЕНЕРАЛЬНОГО ДИРЕКТОРА</h2>
+        </div>
+        <div class="boss__inner">
+          <div class="boss__img"><img src="img/boss.jpg" alt="Фото босса"></div>
+          <div class="boss__content">
+            <p class="boss__name">РЖАВИЧЕВ ВЛАДИМИР ЮРЬЕВИЧ</p>
+            <p class="boss__post">Генеральный директор РадиусИнвенст</p>
+            <p class="boss__speak">Наша команда основала компанию РадиусИнвест с целью развития рекламных площадок в Республике Беларусь. Одним из наших разработанных продуктов является система смс-авторизации публичных wi-fi сетей. Продукт быстро стал востребованным в барах, ресторанах, кафе, автомойках, салонах красоты и т.д. так как данная система авторизации по законодательству Республики Беларусь должна быть установлена на каждой публичной wi-fi сети. Мы начали устанавливать данную систему в бары и рестораны бесплатно и оставили за собой право рекламировать различные бренды на смартфонах гостей заведений в момент подключения в wi-fi сети. На данный момент мы активно развиваемся, у нас абоненты из России, Казахстана и Республики Беларусь. За год было подключено более 350 различных заведений собственными силами. На данный момент мы предлагаем сотрудничество с нами в Минске и других городах Республики Беларусь на очень выгодных условиях!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="call">
+      <div class="call__wrapper">
+        <div class="page-title  page-title--white">
+          <p class="page-title__mini">СВЯЖИТЕСЬ С НАМИ</p>
+          <h2 class="page-title__big">УДОБНЫМ СПОСОБОМ</h2>
+        </div>
+        <div class="call__items">
+          <div class="call__item">
+            <div class="call__img"><img src="img/c1.png" alt="Причина"></div>
+            <p class="call__name">ПОЗВОНИТЕ НАМ</p>
+            <div class="contacts">
+              <div class="contacts__phone">
+                <a href="tel:+375293418345">+375 (29) 341-83-45</a>
+                <a href="tel:+375293418346">+375 (29) 341-83-46</a>
+              </div>
+              <div class="contacts__messenger">
+                <p class="contacts__messenger-item"><i class="fas fa-ellipsis-v"></i> Telegram</p>
+                <p class="contacts__messenger-item"><i class="fas fa-ellipsis-v"></i> Viber</p>
+                <p class="contacts__messenger-item"><i class="fas fa-ellipsis-v"></i> WhatsApp</p>
+              </div>
+            </div>
+            <button class="btn  btn--small  openPopup">ЗАКАЗАТЬ ЗВОНОК</button>
+          </div>
+          <div class="call__item">
+            <div class="call__img"><img src="img/c2.png" alt="Причина"></div>
+            <p class="call__name">НАПИШИТЕ НАМ</p>
+            <a class="call__mail" href="mailto:partner@radiusinvest.by">partner@radiusinvest.by</a>
+          </div>
+          <div class="call__item">
+            <div class="call__img"><img src="img/c3.png" alt="Причина"></div>
+            <p class="call__name">ПРИЕЗЖАЙТЕ К НАМ</p>
+            <p class="call__descr">г. Минск, пр. Победителей 5, офис 405</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="maps">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8f43ec33c62cba7078cc22c1d382bba4292772ecbe06f9f76c5c0252fb641414&amp;source=constructor"></iframe>
+    </div>
 
     <footer class="footer">
       <div class="footer__wrapper">
@@ -182,6 +383,21 @@
         </div>
       </div>
     </footer>
+
+    <div class="overlay"></div>
+    <div class="popup">
+      <div class="closePopup"><i class="fas fa-times"></i></div>
+      <p class="popup__title">УЗНАЙТЕ ПОДРОБНОСТИ СОТРУДНИЧЕСТВА<br>
+        <span>ВСЕГО ЗА 10 МИНУТ</span></p>
+      <form action="mail.php" method="post">
+        <input name="name" type="text" placeholder="Ваше имя">
+        <input name="phone" id="phone2" type="text" placeholder="Ваш телефона" required>
+        <input type="submit" value="Отправить">
+      </form>
+    </div>
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
