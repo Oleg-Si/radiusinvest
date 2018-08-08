@@ -4,7 +4,7 @@
   background-color: #ccc;
   background-image: url('../img/call_bg.jpg');
   background-position: center;
-  background-attachment: fixed;
+  background-size: cover;
   &__wrapper {
     @include container;
   }
@@ -66,6 +66,8 @@
 }
 @media ($desktop-width) {
   .call {
+    background-size: auto;
+    background-attachment: fixed;
     padding-top: 50px;
     padding-bottom: 60px;
     &__img {

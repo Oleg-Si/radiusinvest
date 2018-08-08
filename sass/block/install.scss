@@ -1,7 +1,7 @@
 .install {
   background-color: #333;
   background-image: url('../img/install.jpg');
-  background-attachment: fixed;
+  background-size: cover;
   background-position: center;
   color: $textsecond;
   &__wrapper {
@@ -46,6 +46,8 @@
 }
 @media ($desktop-width) {
   .install {
+    background-size: auto;
+    background-attachment: fixed;
     &__items {
       display: flex;
       flex-wrap: wrap;

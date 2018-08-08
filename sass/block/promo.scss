@@ -2,7 +2,7 @@
   background-color: #333;
   background-image: url('../img/promo_bg.jpg');
   background-position: bottom;
-  background-attachment: fixed;
+  background-size: cover;
   color: $textsecond;
   &__wrapper {
     @include container;
@@ -26,6 +26,8 @@
 }
 @media ($desktop-width) {
   .promo {
+    background-size: auto;
+    background-attachment: fixed;
     padding-top: 25px;
     min-height: 625px;
     &__title {
